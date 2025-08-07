@@ -1,0 +1,185 @@
+
+
+        .heading {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #333;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            
+        }
+        
+        .faculty-container {
+            display: flex;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            padding: 60px 20px;
+            gap: 30px;
+            align-items: flex-start;
+            scroll-snap-type: x mandatory;
+        }
+        
+        .card {
+            scroll-snap-align: center;
+            flex: 0 0 250px;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            opacity: 1;
+            margin: 0 10px;
+            border: none;
+            border-radius: 0;
+            
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+            background-color: #e6f2ff;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            opacity: 1 !important;
+        }
+        
+        .card:hover + .card,
+        .card:has(+ .card:hover) {
+            transform: scale(0.95);
+            opacity: 0.9;
+            z-index: 5;
+        }
+        
+        .card:hover + .card + .card,
+        .card:has(+ .card + .card:hover) {
+            transform: scale(0.9);
+            opacity: 0.8;
+            z-index: 4;
+        }
+        
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 20;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-arrow:hover {
+            background-color: #033ab0;
+        }
+        
+        .nav-arrow:hover svg {
+            fill: white;
+        }
+        
+        .nav-arrow svg {
+            width: 24px;
+            height: 24px;
+            fill: #033ab0;
+            transition: all 0.3s ease;
+        }
+        
+        .arrow-left {
+            left: 20px;
+        }
+        
+        .arrow-right {
+            right: 20px;
+            transform: translateY(-50%) rotate(180deg);
+        }
+        
+        .member-image {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            margin-bottom: 0;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        
+        .card-content {
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .name {
+            margin: 10px 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: rgb(44, 29, 118);
+            transition: all 0.3s ease;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+        
+        .card:hover .name {
+            color: #033ab0;
+        }
+        
+        .divider {
+            width: 100%;
+            height: 1px;
+            background: #ccc;
+            margin: 10px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover .divider {
+            background: #969697;
+            height: 1px;
+        }
+        
+        .role, .dept, .year {
+            font-size: 1rem;
+            color: #333;
+            margin: 8px 0;
+            line-height: 1.4;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin: 15px 0 5px;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover .social-icons {
+            opacity: 1;
+            transform: translateY(-5px);
+        }
+        
+        .social-media {
+            width: 28px;
+            height: 28px;
+            margin: 0 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-media:hover {
+            transform: scale(1.2);
+        }
+   
