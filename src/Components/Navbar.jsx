@@ -1,10 +1,12 @@
 import React from 'react'
+import '../App.css'
+import logo from '../assets/Images/jec logo QQ.webp';
 
 const Navbar = () => {
     return (
         <>
             <div class="h-[80px] flex items-center max-md:h-[70px]">
-                <img class="pl-6 mr-3 h-14 w-auto max-md:h-11" src="./images/jec logo QQ.webp" alt="">
+                <img class="pl-6 mr-3 h-14 w-auto max-md:h-11" src={logo} alt="" />
                     <div class="collegeName">
                         <p class="text-2xl font-semibold max-md:text-xl max-md:mb-[-8px]">Robotics Laboratory</p>
                         <a class="no-underline text-black text-sm max-md:text-xs" target="_blank" href="https://www.jecjabalpur.ac.in/">Jabalpur
