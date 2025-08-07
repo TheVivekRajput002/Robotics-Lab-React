@@ -1,5 +1,4 @@
 import React from 'react';
-import { Clock } from 'lucide-react';
 
 export default function Comingsoon() {
 
@@ -9,7 +8,7 @@ export default function Comingsoon() {
         {/* Animated Icon */}
         <div className="mb-8 animate-bounce">
           <div className="inline-flex items-center justify-center w-24 h-24 bg-gray-300 rounded-full">
-            <Clock className="w-12 h-12 text-gray-600" />
+            <svg className='w-12 h-12 text-gray-600' xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 1024 1025"><path fill="currentColor" d="M512 1025q-104 0-199-40.5t-163.5-109T40.5 712T0 513t40.5-199t109-163.5T313 41T512 0t199 41t163.5 109.5t109 163.5t40.5 199t-40.5 199t-109 163.5t-163.5 109t-199 40.5zm0-896q-104 0-192.5 51t-140 139.5t-51.5 193t51.5 193t140 140T512 897t192.5-51.5t140-140t51.5-193t-51.5-193t-140-139.5T512 129zm192 224L573 530q-5 20-22 33.5T512 577q-21 0-38-13t-23-32L256 289v-32h32l225 181l159-117h32v32z"/></svg>
           </div>
         </div>
 
