@@ -4,7 +4,7 @@ import Home from './Pages/Home';
 import Members from './Pages/Members';
 import Projects from './Pages/Projects';
 import Comingsoon from './Pages/Comingsoon';
-import Navbar from './components/Navbar';
+import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 
 
