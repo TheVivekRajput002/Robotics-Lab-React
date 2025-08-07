@@ -1,6 +1,7 @@
 import React from 'react'
 import '../App.css'
 import logo from '../assets/Images/jec logo QQ.webp';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -15,20 +16,14 @@ const Navbar = () => {
             </div>
 
             <nav class="nav w-full h-14 bg-[#1e2a78]">
-                <div class="flex justify-around h-full items-center max-w-[90%] m-auto">
-                    <a class="text-white text-base active:transition-transform active:duration-80 active:ease-in-out active:scale-107 hover:transition-transform hover:duration-80 hover:ease-in-out hover:scale-107"
-                        href="">Home</a>
-                    <a class="text-white text-base active:transition-transform active:duration-80 active:ease-in-out active:scale-107 hover:transition-transform hover:duration-80 hover:ease-in-out hover:scale-107"
-                        href="">Updates</a>
-                    <a class="text-white text-base active:transition-transform active:duration-80 active:ease-in-out active:scale-107 hover:transition-transform hover:duration-80 hover:ease-in-out hover:scale-107"
-                        href="">Projects</a>
-                    <a class="text-white text-base active:transition-transform active:duration-80 active:ease-in-out active:scale-107 hover:transition-transform hover:duration-80 hover:ease-in-out hover:scale-107"
-                        href="">Equipments</a>
-                    <a class="text-white text-base active:transition-transform active:duration-80 active:ease-in-out active:scale-107 hover:transition-transform hover:duration-80 hover:ease-in-out hover:scale-107 max-sm:hidden"
-                        href="">Institute</a>
-                    <a class="text-white text-base active:transition-transform active:duration-80 active:ease-in-out active:scale-107 hover:transition-transform hover:duration-80 hover:ease-in-out hover:scale-107 max-sm:hidden"
-                        href="">Contact Us</a>
-                </div>
+                <ul class="flex justify-around h-full items-center max-w-[90%] m-auto">
+                    <li><Link className="text-white text-base active:transition-transform active:duration-80 active:ease-in-out active:scale-107 hover:transition-transform hover:duration-80 hover:ease-in-out hover:scale-107" to="/">Home</Link></li>
+                    <li><Link className="text-white text-base active:transition-transform active:duration-80 active:ease-in-out active:scale-107 hover:transition-transform hover:duration-80 hover:ease-in-out hover:scale-107" to="/updates">Updates</Link></li>
+                    <li><Link className="text-white text-base active:transition-transform active:duration-80 active:ease-in-out active:scale-107 hover:transition-transform hover:duration-80 hover:ease-in-out hover:scale-107" to="/projects">Projects</Link></li>
+                    <li><Link className="text-white text-base active:transition-transform active:duration-80 active:ease-in-out active:scale-107 hover:transition-transform hover:duration-80 hover:ease-in-out hover:scale-107" to="/equipments">Equipments</Link></li>
+                    <li><Link className="text-white text-base active:transition-transform active:duration-80 active:ease-in-out active:scale-107 hover:transition-transform hover:duration-80 hover:ease-in-out hover:scale-107" to="https://www.jecjabalpur.ac.in/">Institute</Link></li>
+                    <li><Link className="text-white text-base active:transition-transform active:duration-80 active:ease-in-out active:scale-107 hover:transition-transform hover:duration-80 hover:ease-in-out hover:scale-107" to="/contact_us">Contact Us</Link></li>
+                </ul>
             </nav>
         </>
     )

@@ -11,7 +11,6 @@ import principle_img from '../assets/Images/principle.png'
 const Home = () => {
     return (
         <>
-            <Navbar />
             <div
                 class="home lg:relative lg:h-[calc(100vh-140px)] max-lg:h-auto max-lg:flex max-lg:flex-col-reverse max-lg:items-center">
 
@@ -159,7 +158,6 @@ const Home = () => {
                 </div>
             </div>
 
-            <Footer />
         </>
     )
 }

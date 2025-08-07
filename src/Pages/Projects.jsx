@@ -11,7 +11,6 @@ const Projects = () => {
 
     return (
         <>
-        <Navbar />
             <div className="parent-container">
                 <div className="card" style={{marginTop: '30px'}}>
                     <div className="content">
@@ -126,7 +125,6 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }
