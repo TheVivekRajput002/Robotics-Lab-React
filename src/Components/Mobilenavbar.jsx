@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Home, User, Settings, Mail,Bell,Folder, University, Cpu } from 'lucide-react';
+import { Menu, X, Home, User,Diamond, Settings, Mail,Bell,Folder, University, Cpu } from 'lucide-react';
 import logo from '../assets/Images/jec logo QQ.webp';
 import { Link } from 'react-router-dom';
 
@@ -16,6 +16,7 @@ const Mobilenavbar = () => {
 
     const menuItems = [
         { icon: Home, label: 'Home', href: '/' },
+        { icon: Diamond, label: 'Events', href: '/events' },
         { icon: Bell, label: 'Updates', href: '/updates' },
         { icon: Folder, label: 'Projects', href: '/projects' },
         { icon: Cpu, label: 'Equipments', href: '/equipments' },

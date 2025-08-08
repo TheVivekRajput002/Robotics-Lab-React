@@ -22,6 +22,7 @@ const Navbar = () => {
             <nav class="nav w-full h-14 bg-[#1e2a78]">
                 <ul class="flex h-14 items-center max-w-[80%] m-auto justify-around max-sm:grid max-sm:gap-2 max-sm:grid-cols-4 max-sm:place-items-center max-sm:h-23">
                     <li><Link className="text-white text-base active:transition-transform active:duration-80 active:ease-in-out active:scale-107 hover:transition-transform hover:duration-80 hover:ease-in-out hover:scale-107" to="/">Home</Link></li>
+                    <li><Link className="text-white text-base active:transition-transform active:duration-80 active:ease-in-out active:scale-107 hover:transition-transform hover:duration-80 hover:ease-in-out hover:scale-107" to="/events">Events</Link></li>
                     <li><Link className="text-white text-base active:transition-transform active:duration-80 active:ease-in-out active:scale-107 hover:transition-transform hover:duration-80 hover:ease-in-out hover:scale-107" to="/updates">Updates</Link></li>
                     <li><Link className="text-white text-base active:transition-transform active:duration-80 active:ease-in-out active:scale-107 hover:transition-transform hover:duration-80 hover:ease-in-out hover:scale-107" to="/projects">Projects</Link></li>
                     <li><Link className="text-white text-base active:transition-transform active:duration-80 active:ease-in-out active:scale-107 hover:transition-transform hover:duration-80 hover:ease-in-out hover:scale-107" to="/equipments">Equipments</Link></li>
