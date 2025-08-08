@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
         <>
+
+        {/* jec logo  */}
             <div class="h-[80px] flex items-center max-md:h-[70px]">
                 <img class="pl-6 mr-3 h-14 w-auto max-md:h-11" src={logo} alt="" />
                     <div class="collegeName">
@@ -14,6 +16,8 @@ const Navbar = () => {
                             Engineering College</a>
                     </div>
             </div>
+
+            {/* pc navbar  */}
 
             <nav class="nav w-full h-14 bg-[#1e2a78]">
                 <ul class="flex h-14 items-center max-w-[80%] m-auto justify-around max-sm:grid max-sm:gap-2 max-sm:grid-cols-4 max-sm:place-items-center max-sm:h-23">
