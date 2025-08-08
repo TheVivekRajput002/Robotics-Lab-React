@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, Home, User, Settings, Mail,Bell,Folder, University, Cpu } from 'lucide-react';
 import logo from '../assets/Images/jec logo QQ.webp';
+import { Link } from 'react-router-dom';
 
 const Mobilenavbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,12 +15,12 @@ const Mobilenavbar = () => {
     };
 
     const menuItems = [
-        { icon: Home, label: 'Home', href: '#home' },
-        { icon: Bell, label: 'Updates', href: '#about' },
-        { icon: Folder, label: 'Projects', href: '#services' },
-        { icon: Cpu, label: 'Equipments', href: '#services' },
-        { icon: University, label: 'Institute', href: '#services' },
-        { icon: Mail, label: 'Contact Us', href: '#contact' }
+        { icon: Home, label: 'Home', href: '/' },
+        { icon: Bell, label: 'Updates', href: '/updates' },
+        { icon: Folder, label: 'Projects', href: '/projects' },
+        { icon: Cpu, label: 'Equipments', href: '/equipments' },
+        { icon: University, label: 'Institute', href: 'https://www.jecjabalpur.ac.in/' },
+        { icon: Mail, label: 'Contact Us', href: '/contact_us' }
     ];
 
     return (
@@ -65,15 +66,15 @@ const Mobilenavbar = () => {
                     {menuItems.map((item, index) => {
                         const Icon = item.icon;
                         return (
-                            <a
+                            <Link
                                 key={index}
-                                href={item.href}
+                                to={item.href}
                                 onClick={closeMenu}
                                 className="flex items-center px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
                             >
                                 <Icon className="w-5 h-5 mr-3" />
                                 <span>{item.label}</span>
-                            </a>
+                            </Link>
                         );
                     })}
                 </div>
